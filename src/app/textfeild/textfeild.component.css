@@ -1,0 +1,50 @@
+input{
+    width: 200px;
+    height: 30px;
+    text-align: right;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    font-style: oblique;
+    border: 0px;
+    border-bottom:2px red solid ;
+}
+
+button{
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: large;
+}
+
+.btn{
+color: purple;
+background: #0003;
+border-radius: 50%;
+}
+.btn1{
+    color: black;
+    background: #0001;
+    border-radius: 50%;
+}
+.btnC{
+    color: yellow;
+    background: #0008;
+    border-radius: 50%;    
+}
+
+.btn:hover{
+    color: purple;
+    background: lime;
+    border-radius: 10px;
+    }
+.btn1:hover{
+        color: greenyellow;
+        background: blue;
+        border-radius: 10px;
+    }
+.btnC:hover{
+        color: yellow;
+        background: red;
+        border-radius: 10px;    
+}        
