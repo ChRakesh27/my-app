@@ -7,32 +7,32 @@ import { filter } from 'rxjs';
   styleUrls: ['./textfeild.component.css']
 })
 export class TextfeildComponent implements OnInit {
-  
+
   constructor() { }
   ngOnInit(): void {
   }
-  
-  buttonValue : string = '';
-  total : string = '';
-  answer : number = 0; 
-  temp : string = '';
 
-  textenter(value:string){
+  buttonValue: string = '';
+  total: string = '';
+  answer: number = 0;
+  temp: string = '';
+
+  textenter(value: string) {
     this.buttonValue += value;
-    console.log(this.buttonValue);  
-} 
-eql(){
-  if(this.buttonValue !== ''){
-    this.buttonValue= eval(this.buttonValue);
+    console.log(this.buttonValue);
   }
+  eql() {
+    if (this.buttonValue !== '') {
+      this.buttonValue = eval(this.buttonValue);
+    }
   }
-  clear(){
+  clear() {
     this.buttonValue = '';
     this.answer = 0;
   }
 
-  bs(){
-     this.buttonValue = this.buttonValue.substring(0 , this.buttonValue.length-1);
+  bs() {
+    this.buttonValue = this.buttonValue.substring(0, this.buttonValue.length - 1);
   }
 
 }
